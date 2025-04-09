@@ -37,10 +37,9 @@
 N = int(input())
 Pi = list(map(int,input().split()))
 Pi.sort()
+total = 0
 answer = 0
 for i in range(N):
-    total = 0
-    for j in range(i+1):
-        total += Pi[j]
+    total += Pi[i]
     answer += total
 print(answer)
